@@ -1,3 +1,8 @@
-from django.contrib import admin
+from django.contrib.gis import admin
 
-# Register your models here.
+from .models import PuntoIntervento, PercorsoIntervento
+from leaflet.admin import LeafletGeoAdmin
+
+
+admin.site.register(PuntoIntervento, LeafletGeoAdmin)
+admin.site.register(PercorsoIntervento, LeafletGeoAdmin)

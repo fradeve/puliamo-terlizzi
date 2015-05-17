@@ -110,7 +110,7 @@ USE_TZ = True
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
-LANGUAGE_CODE = "en"
+LANGUAGE_CODE = "it"
 
 # Supported languages
 _ = lambda s: s
@@ -164,18 +164,12 @@ FILE_UPLOAD_PERMISSIONS = 0o644
 
 DATABASES = {
     "default": {
-        # Add "postgresql_psycopg2", "mysql", "sqlite3" or "oracle".
-        "ENGINE": "django.db.backends.",
-        # DB name or path to database file if using sqlite3.
-        "NAME": "",
-        # Not used with sqlite3.
-        "USER": "",
-        # Not used with sqlite3.
+        "ENGINE": "django.db.backends.postgresql_psycopg2",
+        "NAME": "puliamoterlizzi",
+        "USER": "postgres",
         "PASSWORD": "",
-        # Set to empty string for localhost. Not used with sqlite3.
-        "HOST": "",
-        # Set to empty string for default. Not used with sqlite3.
-        "PORT": "",
+        "HOST": "localhost",
+        "PORT": "5432",
     }
 }
 
@@ -239,6 +233,7 @@ INSTALLED_APPS = (
     "django.contrib.sites",
     "django.contrib.sitemaps",
     "django.contrib.staticfiles",
+    "django.contrib.gis",
     "nova",
     "mezzanine.boot",
     "mezzanine.conf",
@@ -249,6 +244,7 @@ INSTALLED_APPS = (
     "mezzanine.pages",
     "mezzanine.galleries",
     "mezzanine.twitter",
+    "leaflet",
     #"mezzanine.accounts",
     #"mezzanine.mobile",
 )
@@ -309,6 +305,17 @@ OPTIONAL_APPS = (
     PACKAGE_NAME_FILEBROWSER,
     PACKAGE_NAME_GRAPPELLI,
 )
+
+##################
+# DJANGO-LEAFLET #
+##################
+
+LEAFLET_CONFIG = {
+    'DEFAULT_CENTER': (41.127, 16.557),
+    'DEFAULT_ZOOM': 13,
+    'MIN_ZOOM': 3,
+    'MAX_ZOOM': 18,
+}
 
 ###################
 # DEPLOY SETTINGS #
