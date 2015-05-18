@@ -5,6 +5,9 @@ from django.conf.urls.i18n import i18n_patterns
 from django.contrib import admin
 
 from mezzanine.core.views import direct_to_template
+from .nova.models import PuntoIntervento
+
+from djgeojson.views import GeoJSONLayerView
 
 
 admin.autodiscover()
@@ -32,6 +35,7 @@ urlpatterns += patterns('',
     # one out.
 
     url("^$", direct_to_template, {"template": "index.html"}, name="home"),
+    url(r'^data.geojson$', GeoJSONLayerView.as_view(model=PuntoIntervento), name='data'),
 
     # HOMEPAGE AS AN EDITABLE PAGE IN THE PAGE TREE
     # ---------------------------------------------

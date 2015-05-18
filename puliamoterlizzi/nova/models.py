@@ -27,6 +27,8 @@ class Invervento(models.Model):
     descrizione = models.CharField(blank=True, null=True, max_length=250,
                                    help_text="Descrizione dell'intervento")
 
+    objects = models.GeoManager()
+
     def __unicode__(self):
         return self.nome
 

@@ -245,6 +245,7 @@ INSTALLED_APPS = (
     "mezzanine.galleries",
     "mezzanine.twitter",
     "leaflet",
+    "djgeojson",
     #"mezzanine.accounts",
     #"mezzanine.mobile",
 )
