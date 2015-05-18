@@ -1,3 +1,4 @@
+from django.utils.timezone import now
 from django.contrib.gis.db import models
 from django.core.validators import MaxValueValidator, MinValueValidator
 
@@ -22,11 +23,12 @@ class Invervento(models.Model):
     partecipanti = models.IntegerField(blank=True, null=True,
                                        help_text="Numero di persone coinvolte")
     date = models.DateField(blank=False, null=True, verbose_name="Data")
+    aggiunto = models.DateField(blank=False, null=False, default=now())
     descrizione = models.CharField(blank=True, null=True, max_length=250,
                                    help_text="Descrizione dell'intervento")
 
     def __unicode__(self):
-        return "Intervento {0}".format(self.id)
+        return self.nome
 
 
 class PuntoIntervento(Invervento):
