@@ -7,14 +7,41 @@
 
 {% block extra_js %}
     {% leaflet_js %}
+    <script src={% static "js/Leaflet.vector-markers.min.js" %}></script>
     <script type="text/javascript">
-    function map_init_basic (map, options) {
-    }
-</script>
+        function map_init_basic (map, options) {
+            function onEachFeature(feature, layer) {
+                var popupContent = "<p>I started out as a GeoJSON " + feature.geometry.type + ", but now I'm a Leaflet vector!</p>";
+
+                if (feature.properties && feature.properties.nome) {
+                    popupContent = feature.properties.nome;
+                }
+                    layer.bindPopup(popupContent);
+            }
+
+            var treeMarker = L.VectorMarkers.icon({
+                icon: 'tree',
+                markerColor: 'green'
+            });
+
+            $.getJSON("{% url 'punti' %}", function(data) {
+                points = L.geoJson(data, {
+                    pointToLayer: function (feature, latlng) {
+                        return L.marker(latlng, {icon: treeMarker});
+                    },
+                    onEachFeature: onEachFeature
+                });
+                map.addLayer(points);
+            });
+
+        }
+    </script>
 {% endblock %}
 
 {% block extra_css %}
     {% leaflet_css %}
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href={% static "css/Leaflet.vector-markers.css" %}>
 {% endblock %}
 
 {% block title_wrapper %}
