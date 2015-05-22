@@ -243,7 +243,6 @@ INSTALLED_APPS = (
     "mezzanine.forms",
     "mezzanine.pages",
     "mezzanine.galleries",
-    "mezzanine.twitter",
     "leaflet",
     "djgeojson",
     #"mezzanine.accounts",
@@ -312,10 +311,20 @@ OPTIONAL_APPS = (
 ##################
 
 LEAFLET_CONFIG = {
+    'ATTRIBUTION_PREFIX': 'PuliamoTerlizzi',
     'DEFAULT_CENTER': (41.127, 16.557),
     'DEFAULT_ZOOM': 13,
     'MIN_ZOOM': 3,
     'MAX_ZOOM': 18,
+    'RESET_VIEW': False,
+    'MINIMAP': False,
+    'SCALE': None,
+    'PLUGINS': {
+        'bouncemarker': {
+            'js': 'js/bouncemarker.js',
+            'auto-include': True,
+        }
+    }
 }
 
 ###################

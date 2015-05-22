@@ -1,39 +1,68 @@
 {% extends "base.html" %}
-{% load i18n  mezzanine_tags staticfiles leaflet_tags%}
+{% load i18n  mezzanine_tags staticfiles leaflet_tags %}
 {% block meta_title %}{% trans "Home" %}{% endblock %}
 {% block title %}{% trans "Home" %}{% endblock %}
 {% block breadcrumb_wrapper %}
 {% endblock %}
 
 {% block extra_js %}
-    {% leaflet_js %}
+    {% leaflet_js plugins="bouncemarker"%}
     <script src={% static "js/Leaflet.vector-markers.min.js" %}></script>
     <script type="text/javascript">
+        if (typeof location.origin === 'undefined')
+            location.origin = location.protocol + '//' + location.host;
         function map_init_basic (map, options) {
             function onEachFeature(feature, layer) {
-                var popupContent = "<p>I started out as a GeoJSON " + feature.geometry.type + ", but now I'm a Leaflet vector!</p>";
+                var popupContent = "<p><b>" + feature.properties.nome + "</b></p>" +
+                        "Degrado: " + feature.properties.degrado + "<br>";
 
-                if (feature.properties && feature.properties.nome) {
-                    popupContent = feature.properties.nome;
+                if (feature.properties.gallery_url) {
+                    popupContent += "<a href='" + location.origin + '/'
+                    + feature.properties.gallery_url + "'><i class='fa fa-external-link'></i> Link galleria</a>"
                 }
                     layer.bindPopup(popupContent);
             }
 
-            var treeMarker = L.VectorMarkers.icon({
+            var doneMarker = L.VectorMarkers.icon({
                 icon: 'tree',
                 markerColor: 'green'
             });
+            var plannedMarker = L.VectorMarkers.icon({
+                icon: 'dot-circle-o',
+                markerColor: 'orange'
+            });
+            var commonOpt = {
+                bounceOnAdd: true,
+                bounceOnAddOptions: {duration: 800, height: 100},
+                bounceOnAddCallback: function() {}
+            };
 
             $.getJSON("{% url 'punti' %}", function(data) {
-                points = L.geoJson(data, {
+                var points = L.geoJson(data, {
                     pointToLayer: function (feature, latlng) {
-                        return L.marker(latlng, {icon: treeMarker});
+                        if (feature.properties.status == 'PI') {
+                            var iconOpt = {icon: plannedMarker};
+                            return L.marker(latlng, $.extend({}, commonOpt, iconOpt));
+                        } else {
+                            var iconOpt = {icon: doneMarker};
+                            return L.marker(latlng, $.extend({}, commonOpt, iconOpt));
+                        }
                     },
                     onEachFeature: onEachFeature
                 });
                 map.addLayer(points);
             });
 
+            var legend = L.control( { position: 'bottomright' } );
+            legend.onAdd = function(map) {
+                var legendContainer = L.DomUtil.create("div", "legend");
+                $(legendContainer).append(
+                        "<a href=" + location.origin + "/mappa" +
+                        ">Vai alla mappa </a><i class='fa fa-arrow-circle-right'></i>"
+                );
+                return legendContainer;
+            };
+            legend.addTo(map)
         }
     </script>
 {% endblock %}
@@ -42,6 +71,17 @@
     {% leaflet_css %}
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href={% static "css/Leaflet.vector-markers.css" %}>
+    <style>
+        .legend, .temporal-legend {
+            padding: 6px 10px;
+            font: 14px/16px Arial, Helvetica, sans-serif;
+            background: white;
+            background: rgba(255,255,255,0.8);
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            border-radius: 5px;
+            font-size: large;
+        }
+    </style>
 {% endblock %}
 
 {% block title_wrapper %}
@@ -60,7 +100,7 @@
                 <p class="no-margin">L’Associazione si propone di promuovere la tutela, la salvaguardia, la conservazione, la valorizzazione, la fruizione, la conoscenza e la riscoperta del patrimonio naturale, rurale, archeologico, storico, artistico, culturale, folkloristico, antropologico, demoetnoantropologico ed enogastronomico del territorio del Comune di Terlizzi e di aree ad esso limitrofe.</p>
             </div>
             <div class="span3">
-                <a class="btn btn-success btn-large pull-right" href="http://shapebootstrap.net">Chi siamo</a>
+                <a class="btn btn-success btn-large pull-right" href="/about">Chi siamo</a>
             </div>
         </div>
     </div>
