@@ -19,13 +19,13 @@ class Invervento(models.Model):
 
     status = models.CharField(choices=status_choices, blank=False, null=False, max_length=2,
                               verbose_name="Stato dell'intervento")
-    degrado = models.IntegerField(default=1, validators=[MaxValueValidator(4), MinValueValidator(1)],
-                                  help_text="Livello degrado tra 1 e 4")
+    degrado = models.IntegerField(default=4, validators=[MaxValueValidator(4), MinValueValidator(1)],
+                                  help_text="Livello degrado tra 1 (grave) e 4 (lieve)")
     nome = models.CharField(blank=False, null=False, max_length=250,
                             help_text="Nome dell'intervento")
     partecipanti = models.IntegerField(blank=True, null=True,
                                        help_text="Numero di persone coinvolte")
-    date = models.DateField(blank=False, null=True, verbose_name="Data",
+    date = models.DateField(blank=True, null=True, verbose_name="Data",
                             help_text="Data dell'intervento")
     aggiunto = models.DateField(blank=False, null=False, default=now(),
                                 help_text="Data di registrazione")

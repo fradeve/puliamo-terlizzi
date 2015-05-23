@@ -1,0 +1,992 @@
+[
+{
+    "model": "nova.puntointervento",
+    "fields": {
+        "nome": "C.da Belvedere",
+        "galleria": null,
+        "date": null,
+        "aggiunto": "2015-05-23",
+        "partecipanti": null,
+        "descrizione": "",
+        "status": "SV",
+        "degrado": 4,
+        "point": "POINT (16.5604108567640651 41.0899057058671389)"
+    },
+    "pk": 1
+},
+{
+    "model": "nova.puntointervento",
+    "fields": {
+        "nome": "S.P. 231 svincolo per Sovereto",
+        "galleria": null,
+        "date": null,
+        "aggiunto": "2015-05-23",
+        "partecipanti": null,
+        "descrizione": "",
+        "status": "PI",
+        "degrado": 4,
+        "point": "POINT (16.5726296602588263 41.1154245244150545)"
+    },
+    "pk": 2
+},
+{
+    "model": "nova.puntointervento",
+    "fields": {
+        "nome": "Via Vecchia San Marco",
+        "galleria": null,
+        "date": null,
+        "aggiunto": "2015-05-23",
+        "partecipanti": null,
+        "descrizione": "",
+        "status": "PI",
+        "degrado": 4,
+        "point": "POINT (16.5646263954840833 41.1212918168899009)"
+    },
+    "pk": 3
+},
+{
+    "model": "nova.puntointervento",
+    "fields": {
+        "nome": "Cassonetti Via Vecchia-Sovereto (Villa De Pau)",
+        "galleria": null,
+        "date": null,
+        "aggiunto": "2015-05-23",
+        "partecipanti": null,
+        "descrizione": "",
+        "status": "SV",
+        "degrado": 1,
+        "point": "POINT (16.5653125940661994 41.1240939358713078)"
+    },
+    "pk": 4
+},
+{
+    "model": "nova.puntointervento",
+    "fields": {
+        "nome": "Strada Comunale Monserino",
+        "galleria": null,
+        "date": null,
+        "aggiunto": "2015-05-23",
+        "partecipanti": null,
+        "descrizione": "",
+        "status": "PI",
+        "degrado": 4,
+        "point": "POINT (16.5361520645819837 41.1136132429859273)"
+    },
+    "pk": 5
+},
+{
+    "model": "nova.puntointervento",
+    "fields": {
+        "nome": "Pineta Comunale Ovest Cimitero",
+        "galleria": null,
+        "date": null,
+        "aggiunto": "2015-05-23",
+        "partecipanti": null,
+        "descrizione": "",
+        "status": "PI",
+        "degrado": 4,
+        "point": "POINT (16.5419358010694850 41.1202175441081081)"
+    },
+    "pk": 6
+},
+{
+    "model": "nova.puntointervento",
+    "fields": {
+        "nome": "Passaggio a livello",
+        "galleria": null,
+        "date": null,
+        "aggiunto": "2015-05-23",
+        "partecipanti": null,
+        "descrizione": "",
+        "status": "PI",
+        "degrado": 4,
+        "point": "POINT (16.5316459534369642 41.1218656531801443)"
+    },
+    "pk": 7
+},
+{
+    "model": "nova.puntointervento",
+    "fields": {
+        "nome": "Via Eroi del Mare (angolo campo sportivo)",
+        "galleria": null,
+        "date": null,
+        "aggiunto": "2015-05-23",
+        "partecipanti": null,
+        "descrizione": "",
+        "status": "PI",
+        "degrado": 4,
+        "point": "POINT (16.5525130926471320 41.1276579531828617)"
+    },
+    "pk": 8
+},
+{
+    "model": "nova.puntointervento",
+    "fields": {
+        "nome": "Strada Vicinale S.P. Terlizzi-Molfetta",
+        "galleria": null,
+        "date": null,
+        "aggiunto": "2015-05-23",
+        "partecipanti": null,
+        "descrizione": "",
+        "status": "PI",
+        "degrado": 4,
+        "point": "POINT (16.5481147167884046 41.1397147092625985)"
+    },
+    "pk": 9
+},
+{
+    "model": "nova.puntointervento",
+    "fields": {
+        "nome": "Terlizzi Nord",
+        "galleria": null,
+        "date": null,
+        "aggiunto": "2015-05-23",
+        "partecipanti": null,
+        "descrizione": "",
+        "status": "PI",
+        "degrado": 4,
+        "point": "POINT (16.5421503777906764 41.1391316023125668)"
+    },
+    "pk": 10
+},
+{
+    "model": "nova.puntointervento",
+    "fields": {
+        "nome": "Pozzo Soldato",
+        "galleria": null,
+        "date": null,
+        "aggiunto": "2015-05-23",
+        "partecipanti": null,
+        "descrizione": "",
+        "status": "PI",
+        "degrado": 4,
+        "point": "POINT (16.5186211464606458 41.1381794974821204)"
+    },
+    "pk": 11
+},
+{
+    "model": "nova.puntointervento",
+    "fields": {
+        "nome": "Piscina Rossa",
+        "galleria": null,
+        "date": null,
+        "aggiunto": "2015-05-23",
+        "partecipanti": null,
+        "descrizione": "",
+        "status": "PI",
+        "degrado": 4,
+        "point": "POINT (16.5599267183642951 41.1551614508717023)"
+    },
+    "pk": 12
+},
+{
+    "model": "nova.puntointervento",
+    "fields": {
+        "nome": "Appia Traiana Est",
+        "galleria": null,
+        "date": null,
+        "aggiunto": "2015-05-23",
+        "partecipanti": null,
+        "descrizione": "",
+        "status": "SV",
+        "degrado": 4,
+        "point": "POINT (16.5641659493849147 41.0989453443181390)"
+    },
+    "pk": 13
+},
+{
+    "model": "nova.puntointervento",
+    "fields": {
+        "nome": "Pineta S.P. per Mariotto",
+        "galleria": null,
+        "date": null,
+        "aggiunto": "2015-05-23",
+        "partecipanti": null,
+        "descrizione": "",
+        "status": "SV",
+        "degrado": 4,
+        "point": "POINT (16.5562038122516242 41.0990261942092516)"
+    },
+    "pk": 14
+},
+{
+    "model": "nova.puntointervento",
+    "fields": {
+        "nome": "Appia Traiana - Padula",
+        "galleria": null,
+        "date": null,
+        "aggiunto": "2015-05-23",
+        "partecipanti": null,
+        "descrizione": "",
+        "status": "SV",
+        "degrado": 4,
+        "point": "POINT (16.5508612988196546 41.1008001491477089)"
+    },
+    "pk": 15
+},
+{
+    "model": "nova.puntointervento",
+    "fields": {
+        "nome": "Appia Traiana Centrale",
+        "galleria": null,
+        "date": null,
+        "aggiunto": "2015-05-23",
+        "partecipanti": null,
+        "descrizione": "",
+        "status": "SV",
+        "degrado": 1,
+        "point": "POINT (16.5301787844509818 41.1035630575004376)"
+    },
+    "pk": 16
+},
+{
+    "model": "nova.puntointervento",
+    "fields": {
+        "nome": "2\u00b0 Arco di Portoni",
+        "galleria": null,
+        "date": null,
+        "aggiunto": "2015-05-23",
+        "partecipanti": null,
+        "descrizione": "",
+        "status": "SV",
+        "degrado": 1,
+        "point": "POINT (16.5198978779517311 41.1046241291087924)"
+    },
+    "pk": 17
+},
+{
+    "model": "nova.puntointervento",
+    "fields": {
+        "nome": "Verdone",
+        "galleria": null,
+        "date": null,
+        "aggiunto": "2015-05-23",
+        "partecipanti": null,
+        "descrizione": "",
+        "status": "SV",
+        "degrado": 4,
+        "point": "POINT (16.5171325198025443 41.1071766935810601)"
+    },
+    "pk": 18
+},
+{
+    "model": "nova.puntointervento",
+    "fields": {
+        "nome": "S.C. Santo Stasi",
+        "galleria": null,
+        "date": null,
+        "aggiunto": "2015-05-23",
+        "partecipanti": null,
+        "descrizione": "",
+        "status": "SV",
+        "degrado": 4,
+        "point": "POINT (16.5169255434375373 41.1175988044053113)"
+    },
+    "pk": 19
+},
+{
+    "model": "nova.puntointervento",
+    "fields": {
+        "nome": "Cesano",
+        "galleria": null,
+        "date": null,
+        "aggiunto": "2015-05-23",
+        "partecipanti": null,
+        "descrizione": "",
+        "status": "SV",
+        "degrado": 4,
+        "point": "POINT (16.5465693174701300 41.1082545481599269)"
+    },
+    "pk": 20
+},
+{
+    "model": "nova.puntointervento",
+    "fields": {
+        "nome": "c/o Gallo Carburanti",
+        "galleria": null,
+        "date": null,
+        "aggiunto": "2015-05-23",
+        "partecipanti": null,
+        "descrizione": "",
+        "status": "SV",
+        "degrado": 4,
+        "point": "POINT (16.5479636192321777 41.1132851997324451)"
+    },
+    "pk": 21
+},
+{
+    "model": "nova.puntointervento",
+    "fields": {
+        "nome": "Raccolta Pneumatici S.P. 231",
+        "galleria": null,
+        "date": null,
+        "aggiunto": "2015-05-23",
+        "partecipanti": null,
+        "descrizione": "",
+        "status": "SV",
+        "degrado": 4,
+        "point": "POINT (16.5529963371955091 41.1123684211351730)"
+    },
+    "pk": 22
+},
+{
+    "model": "nova.puntointervento",
+    "fields": {
+        "nome": "Raccolta Pneumatici S.P. 231",
+        "galleria": null,
+        "date": null,
+        "aggiunto": "2015-05-23",
+        "partecipanti": null,
+        "descrizione": "",
+        "status": "SV",
+        "degrado": 4,
+        "point": "POINT (16.5621042251586914 41.1136651100919224)"
+    },
+    "pk": 23
+},
+{
+    "model": "nova.puntointervento",
+    "fields": {
+        "nome": "C.da Sovero",
+        "galleria": null,
+        "date": null,
+        "aggiunto": "2015-05-23",
+        "partecipanti": null,
+        "descrizione": "",
+        "status": "SV",
+        "degrado": 4,
+        "point": "POINT (16.5810415146552259 41.1136678044426702)"
+    },
+    "pk": 24
+},
+{
+    "model": "nova.puntointervento",
+    "fields": {
+        "nome": "Sovereto",
+        "galleria": null,
+        "date": null,
+        "aggiunto": "2015-05-23",
+        "partecipanti": null,
+        "descrizione": "",
+        "status": "SV",
+        "degrado": 4,
+        "point": "POINT (16.5806445477210218 41.1172344087037587)"
+    },
+    "pk": 25
+},
+{
+    "model": "nova.puntointervento",
+    "fields": {
+        "nome": "Sovereto S.P. 231",
+        "galleria": null,
+        "date": null,
+        "aggiunto": "2015-05-23",
+        "partecipanti": null,
+        "descrizione": "",
+        "status": "SV",
+        "degrado": 4,
+        "point": "POINT (16.5938566624026862 41.1154366488526009)"
+    },
+    "pk": 26
+},
+{
+    "model": "nova.puntointervento",
+    "fields": {
+        "nome": "Piscina Scalera",
+        "galleria": null,
+        "date": null,
+        "aggiunto": "2015-05-23",
+        "partecipanti": null,
+        "descrizione": "",
+        "status": "SV",
+        "degrado": 4,
+        "point": "POINT (16.5751084683142835 41.1199966256942062)"
+    },
+    "pk": 27
+},
+{
+    "model": "nova.puntointervento",
+    "fields": {
+        "nome": "Piscina Cappella di Mezzo",
+        "galleria": null,
+        "date": null,
+        "aggiunto": "2015-05-23",
+        "partecipanti": null,
+        "descrizione": "",
+        "status": "SV",
+        "degrado": 4,
+        "point": "POINT (16.5677922959730495 41.1236282151583197)"
+    },
+    "pk": 28
+},
+{
+    "model": "nova.puntointervento",
+    "fields": {
+        "nome": "S.P. 107 - Sovereto",
+        "galleria": null,
+        "date": null,
+        "aggiunto": "2015-05-23",
+        "partecipanti": null,
+        "descrizione": "",
+        "status": "SV",
+        "degrado": 4,
+        "point": "POINT (16.5861815209791530 41.1230341892275604)"
+    },
+    "pk": 29
+},
+{
+    "model": "nova.puntointervento",
+    "fields": {
+        "nome": "S.P. 107 - Sovereto",
+        "galleria": null,
+        "date": null,
+        "aggiunto": "2015-05-23",
+        "partecipanti": null,
+        "descrizione": "",
+        "status": "SV",
+        "degrado": 4,
+        "point": "POINT (16.5894001717970241 41.1306793366986057)"
+    },
+    "pk": 30
+},
+{
+    "model": "nova.puntointervento",
+    "fields": {
+        "nome": "Vicinale S.P. 107",
+        "galleria": null,
+        "date": null,
+        "aggiunto": "2015-05-23",
+        "partecipanti": null,
+        "descrizione": "",
+        "status": "SV",
+        "degrado": 4,
+        "point": "POINT (16.5711593627929688 41.1325446929971648)"
+    },
+    "pk": 31
+},
+{
+    "model": "nova.puntointervento",
+    "fields": {
+        "nome": "S.V. Specchia",
+        "galleria": null,
+        "date": null,
+        "aggiunto": "2015-05-23",
+        "partecipanti": null,
+        "descrizione": "",
+        "status": "SV",
+        "degrado": 4,
+        "point": "POINT (16.5617412324354483 41.1296409096443796)"
+    },
+    "pk": 32
+},
+{
+    "model": "nova.puntointervento",
+    "fields": {
+        "nome": "Area Verde Viale Aldo Moro",
+        "galleria": null,
+        "date": null,
+        "aggiunto": "2015-05-23",
+        "partecipanti": null,
+        "descrizione": "",
+        "status": "SV",
+        "degrado": 4,
+        "point": "POINT (16.5529744325976935 41.1312743036098851)"
+    },
+    "pk": 33
+},
+{
+    "model": "nova.puntointervento",
+    "fields": {
+        "nome": "Via Chicoli",
+        "galleria": null,
+        "date": null,
+        "aggiunto": "2015-05-23",
+        "partecipanti": null,
+        "descrizione": "",
+        "status": "SV",
+        "degrado": 4,
+        "point": "POINT (16.5522783990309108 41.1359318287131686)"
+    },
+    "pk": 34
+},
+{
+    "model": "nova.puntointervento",
+    "fields": {
+        "nome": "Aiuola Pacecco",
+        "galleria": null,
+        "date": null,
+        "aggiunto": "2015-05-23",
+        "partecipanti": null,
+        "descrizione": "",
+        "status": "SV",
+        "degrado": 4,
+        "point": "POINT (16.5476690231662360 41.1340500708453263)"
+    },
+    "pk": 35
+},
+{
+    "model": "nova.puntointervento",
+    "fields": {
+        "nome": "Giardini Via N.Quercia (Poste)",
+        "galleria": null,
+        "date": null,
+        "aggiunto": "2015-05-23",
+        "partecipanti": null,
+        "descrizione": "",
+        "status": "SV",
+        "degrado": 4,
+        "point": "POINT (16.5403734146457282 41.1313753161215701)"
+    },
+    "pk": 36
+},
+{
+    "model": "nova.puntointervento",
+    "fields": {
+        "nome": "Villette Viale Italia",
+        "galleria": null,
+        "date": null,
+        "aggiunto": "2015-05-23",
+        "partecipanti": null,
+        "descrizione": "",
+        "status": "SV",
+        "degrado": 4,
+        "point": "POINT (16.5390323101382819 41.1332622012525562)"
+    },
+    "pk": 37
+},
+{
+    "model": "nova.puntointervento",
+    "fields": {
+        "nome": "Vicinale S.P.2 (ex Circolo 80)",
+        "galleria": null,
+        "date": null,
+        "aggiunto": "2015-05-23",
+        "partecipanti": null,
+        "descrizione": "",
+        "status": "SV",
+        "degrado": 4,
+        "point": "POINT (16.5264366566043464 41.1259769895774809)"
+    },
+    "pk": 38
+},
+{
+    "model": "nova.puntointervento",
+    "fields": {
+        "nome": "Camarelle - Centrale Elettrica",
+        "galleria": null,
+        "date": null,
+        "aggiunto": "2015-05-23",
+        "partecipanti": null,
+        "descrizione": "",
+        "status": "SV",
+        "degrado": 4,
+        "point": "POINT (16.5150913593970472 41.1325736493312633)"
+    },
+    "pk": 39
+},
+{
+    "model": "nova.puntointervento",
+    "fields": {
+        "nome": "Via Vecchia Calcara - Lama Lioy",
+        "galleria": null,
+        "date": null,
+        "aggiunto": "2015-05-23",
+        "partecipanti": null,
+        "descrizione": "",
+        "status": "SV",
+        "degrado": 4,
+        "point": "POINT (16.5296182034217054 41.1386582450114062)"
+    },
+    "pk": 40
+},
+{
+    "model": "nova.puntointervento",
+    "fields": {
+        "nome": "Via Fondo Rotondo",
+        "galleria": null,
+        "date": null,
+        "aggiunto": "2015-05-23",
+        "partecipanti": null,
+        "descrizione": "",
+        "status": "SV",
+        "degrado": 4,
+        "point": "POINT (16.5379017587110866 41.1392285627121908)"
+    },
+    "pk": 41
+},
+{
+    "model": "nova.puntointervento",
+    "fields": {
+        "nome": "San Luca - Santa Lucia - Paradiso",
+        "galleria": null,
+        "date": null,
+        "aggiunto": "2015-05-23",
+        "partecipanti": null,
+        "descrizione": "",
+        "status": "SV",
+        "degrado": 4,
+        "point": "POINT (16.5385454888746608 41.1438178576646010)"
+    },
+    "pk": 42
+},
+{
+    "model": "nova.puntointervento",
+    "fields": {
+        "nome": "Strada Vicinale Stadio Comunale",
+        "galleria": null,
+        "date": null,
+        "aggiunto": "2015-05-23",
+        "partecipanti": null,
+        "descrizione": "",
+        "status": "PI",
+        "degrado": 1,
+        "point": "POINT (16.5535484253268805 41.1276377496099812)"
+    },
+    "pk": 43
+},
+{
+    "model": "nova.puntointervento",
+    "fields": {
+        "nome": "Discarica c/o Monteverde",
+        "galleria": null,
+        "date": null,
+        "aggiunto": "2015-05-23",
+        "partecipanti": null,
+        "descrizione": "",
+        "status": "PI",
+        "degrado": 1,
+        "point": "POINT (16.5489363652886823 41.0937343626647049)"
+    },
+    "pk": 44
+},
+{
+    "model": "nova.puntointervento",
+    "fields": {
+        "nome": "S.C. Padula",
+        "galleria": null,
+        "date": null,
+        "aggiunto": "2015-05-23",
+        "partecipanti": null,
+        "descrizione": "",
+        "status": "PI",
+        "degrado": 1,
+        "point": "POINT (16.5528810015530325 41.0971598851370743)"
+    },
+    "pk": 45
+},
+{
+    "model": "nova.puntointervento",
+    "fields": {
+        "nome": "C.da Specchione-Monteleone",
+        "galleria": null,
+        "date": null,
+        "aggiunto": "2015-05-23",
+        "partecipanti": null,
+        "descrizione": "",
+        "status": "PI",
+        "degrado": 1,
+        "point": "POINT (16.5397489062161185 41.0585012232245532)"
+    },
+    "pk": 46
+},
+{
+    "model": "nova.puntointervento",
+    "fields": {
+        "nome": "San Giorgio - Torrente Tiflis",
+        "galleria": null,
+        "date": null,
+        "aggiunto": "2015-05-23",
+        "partecipanti": null,
+        "descrizione": "",
+        "status": "PI",
+        "degrado": 1,
+        "point": "POINT (16.5358847375318874 41.0787621144940189)"
+    },
+    "pk": 47
+},
+{
+    "model": "nova.puntointervento",
+    "fields": {
+        "nome": "Creta",
+        "galleria": null,
+        "date": null,
+        "aggiunto": "2015-05-23",
+        "partecipanti": null,
+        "descrizione": "",
+        "status": "PI",
+        "degrado": 1,
+        "point": "POINT (16.5399187798902858 41.1041154905904591)"
+    },
+    "pk": 48
+},
+{
+    "model": "nova.puntointervento",
+    "fields": {
+        "nome": "Lato Ovest Cavalcavia S.C. dei Portoni - S.P. 231",
+        "galleria": null,
+        "date": null,
+        "aggiunto": "2015-05-23",
+        "partecipanti": null,
+        "descrizione": "",
+        "status": "PI",
+        "degrado": 1,
+        "point": "POINT (16.5259538589816657 41.1109757150542094)"
+    },
+    "pk": 49
+},
+{
+    "model": "nova.puntointervento",
+    "fields": {
+        "nome": "Appia-Traiana Est",
+        "galleria": null,
+        "date": null,
+        "aggiunto": "2015-05-23",
+        "partecipanti": null,
+        "descrizione": "",
+        "status": "PI",
+        "degrado": 1,
+        "point": "POINT (16.5880715838284232 41.1035630570070225)"
+    },
+    "pk": 50
+},
+{
+    "model": "nova.puntointervento",
+    "fields": {
+        "nome": "Cavalcavia S.P. 231 Sovereto-Bitonto",
+        "galleria": null,
+        "date": null,
+        "aggiunto": "2015-05-23",
+        "partecipanti": null,
+        "descrizione": "",
+        "status": "SV",
+        "degrado": 1,
+        "point": "POINT (16.5925692020755378 41.1159751736947712)"
+    },
+    "pk": 51
+},
+{
+    "model": "nova.puntointervento",
+    "fields": {
+        "nome": "Via Spineto - Zona Ind.le",
+        "galleria": null,
+        "date": null,
+        "aggiunto": "2015-05-23",
+        "partecipanti": null,
+        "descrizione": "",
+        "status": "PI",
+        "degrado": 1,
+        "point": "POINT (16.5596365928649902 41.1154110528357108)"
+    },
+    "pk": 52
+},
+{
+    "model": "nova.puntointervento",
+    "fields": {
+        "nome": "Torre Peppe",
+        "galleria": null,
+        "date": null,
+        "aggiunto": "2015-05-23",
+        "partecipanti": null,
+        "descrizione": "",
+        "status": "PI",
+        "degrado": 1,
+        "point": "POINT (16.5640819063992240 41.1092784933407529)"
+    },
+    "pk": 53
+},
+{
+    "model": "nova.puntointervento",
+    "fields": {
+        "nome": "Strada Vic. Piscina S. Giorgio",
+        "galleria": null,
+        "date": null,
+        "aggiunto": "2015-05-23",
+        "partecipanti": null,
+        "descrizione": "",
+        "status": "PI",
+        "degrado": 1,
+        "point": "POINT (16.5606254334852565 41.1100693455269948)"
+    },
+    "pk": 54
+},
+{
+    "model": "nova.puntointervento",
+    "fields": {
+        "nome": "Cisterna di Pisciniello",
+        "galleria": null,
+        "date": null,
+        "aggiunto": "2015-05-23",
+        "partecipanti": null,
+        "descrizione": "",
+        "status": "PI",
+        "degrado": 1,
+        "point": "POINT (16.5364895759921637 41.1216117379963109)"
+    },
+    "pk": 55
+},
+{
+    "model": "nova.puntointervento",
+    "fields": {
+        "nome": "c/o 1\u00b0 Arco Portoni",
+        "galleria": null,
+        "date": null,
+        "aggiunto": "2015-05-23",
+        "partecipanti": null,
+        "descrizione": "",
+        "status": "PI",
+        "degrado": 1,
+        "point": "POINT (16.5354010460578138 41.1228193418313523)"
+    },
+    "pk": 56
+},
+{
+    "model": "nova.puntointervento",
+    "fields": {
+        "nome": "Sovrapasso Viale dei Lilium lato sud-ovest",
+        "galleria": null,
+        "date": null,
+        "aggiunto": "2015-05-23",
+        "partecipanti": null,
+        "descrizione": "",
+        "status": "PI",
+        "degrado": 1,
+        "point": "POINT (16.5413121878009370 41.1250637556872292)"
+    },
+    "pk": 57
+},
+{
+    "model": "nova.puntointervento",
+    "fields": {
+        "nome": "Camarelle",
+        "galleria": null,
+        "date": null,
+        "aggiunto": "2015-05-23",
+        "partecipanti": null,
+        "descrizione": "",
+        "status": "PI",
+        "degrado": 1,
+        "point": "POINT (16.5289324517652858 41.1304692282707620)"
+    },
+    "pk": 58
+},
+{
+    "model": "nova.puntointervento",
+    "fields": {
+        "nome": "C.da Pozzo Nicola Quercia",
+        "galleria": null,
+        "date": null,
+        "aggiunto": "2015-05-23",
+        "partecipanti": null,
+        "descrizione": "",
+        "status": "PI",
+        "degrado": 1,
+        "point": "POINT (16.5062293408118421 41.1332039523779471)"
+    },
+    "pk": 59
+},
+{
+    "model": "nova.puntointervento",
+    "fields": {
+        "nome": "Pozzo Misuriello",
+        "galleria": null,
+        "date": null,
+        "aggiunto": "2015-05-23",
+        "partecipanti": null,
+        "descrizione": "",
+        "status": "PI",
+        "degrado": 1,
+        "point": "POINT (16.5735957024298841 41.1295675053353094)"
+    },
+    "pk": 60
+},
+{
+    "model": "nova.puntointervento",
+    "fields": {
+        "nome": "Terlizzi Est",
+        "galleria": null,
+        "date": null,
+        "aggiunto": "2015-05-23",
+        "partecipanti": null,
+        "descrizione": "",
+        "status": "PI",
+        "degrado": 1,
+        "point": "POINT (16.5657538171217311 41.1319238112833290)"
+    },
+    "pk": 61
+},
+{
+    "model": "nova.puntointervento",
+    "fields": {
+        "nome": "Via Cappella dei Chicoli",
+        "galleria": null,
+        "date": null,
+        "aggiunto": "2015-05-23",
+        "partecipanti": null,
+        "descrizione": "",
+        "status": "PI",
+        "degrado": 1,
+        "point": "POINT (16.5557116265699733 41.1375478954952527)"
+    },
+    "pk": 62
+},
+{
+    "model": "nova.puntointervento",
+    "fields": {
+        "nome": "L'alfiere (strada per Sette Torri)",
+        "galleria": null,
+        "date": null,
+        "aggiunto": "2015-05-23",
+        "partecipanti": null,
+        "descrizione": "",
+        "status": "PI",
+        "degrado": 1,
+        "point": "POINT (16.5937346215650905 41.1370307584568948)"
+    },
+    "pk": 63
+},
+{
+    "model": "nova.puntointervento",
+    "fields": {
+        "nome": "C.da Morigene",
+        "galleria": null,
+        "date": null,
+        "aggiunto": "2015-05-23",
+        "partecipanti": null,
+        "descrizione": "",
+        "status": "PI",
+        "degrado": 1,
+        "point": "POINT (16.5122812982008327 41.1457851771359415)"
+    },
+    "pk": 64
+},
+{
+    "model": "nova.puntointervento",
+    "fields": {
+        "nome": "Pozzo Lioy",
+        "galleria": null,
+        "date": null,
+        "aggiunto": "2015-05-23",
+        "partecipanti": null,
+        "descrizione": "",
+        "status": "PI",
+        "degrado": 1,
+        "point": "POINT (16.5273445840284694 41.1468233483833714)"
+    },
+    "pk": 65
+},
+{
+    "model": "nova.puntointervento",
+    "fields": {
+        "nome": "S.P. Ruvo - Molfetta",
+        "galleria": null,
+        "date": null,
+        "aggiunto": "2015-05-23",
+        "partecipanti": null,
+        "descrizione": "",
+        "status": "PI",
+        "degrado": 1,
+        "point": "POINT (16.5271930395465461 41.1536710311442206)"
+    },
+    "pk": 66
+}
+]
