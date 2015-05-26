@@ -173,6 +173,7 @@ DATABASES = {
     }
 }
 
+POSTGIS_VERSION = (1, 5, 0)
 
 #########
 # PATHS #
@@ -292,6 +293,8 @@ MIDDLEWARE_CLASSES = (
 # at the moment we are using custom forks of them.
 PACKAGE_NAME_FILEBROWSER = "filebrowser_safe"
 PACKAGE_NAME_GRAPPELLI = "grappelli_safe"
+
+SHELL_PLUS = "ipython"
 
 #########################
 # OPTIONAL APPLICATIONS #

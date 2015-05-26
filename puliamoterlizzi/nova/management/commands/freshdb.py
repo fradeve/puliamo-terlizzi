@@ -39,11 +39,10 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         recreate_db()
-        print("Running createdb...")
-        call_command("createdb --noinput")
-        print("Running migration scripts...")
-        call_command("migrate")
+        print("Running syncdb...")
+        call_command("syncdb")
         fixtures = [
+            "nova/fixtures/default_pages.json",
             "nova/fixtures/default_geodata.json",
         ]
         for fixture in fixtures:
