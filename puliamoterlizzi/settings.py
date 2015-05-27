@@ -246,8 +246,8 @@ INSTALLED_APPS = (
     "mezzanine.galleries",
     "leaflet",
     "djgeojson",
+    "mezzanine.mobile",
     #"mezzanine.accounts",
-    #"mezzanine.mobile",
 )
 
 # List of processors used by RequestContext to populate the context.

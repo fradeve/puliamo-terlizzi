@@ -38,6 +38,7 @@ urlpatterns += \
              url("^$", direct_to_template, {"template": "index.html"}, name="home"),
              url(r'^punti.geojson$', GeoJSONResponsePointMixin.as_view(model=PuntoIntervento), name='punti'),
              url(r'^percorsi.geojson$', GeoJSONResponsePathMixin.as_view(model=PercorsoIntervento), name='percorsi'),
+             url(r'mappa/', direct_to_template, {"template": "map.html"}, name="mappa"),
 
              # HOMEPAGE AS AN EDITABLE PAGE IN THE PAGE TREE
              # ---------------------------------------------
