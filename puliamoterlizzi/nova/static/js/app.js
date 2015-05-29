@@ -260,12 +260,12 @@ var markerClusters = new L.MarkerClusterGroup({
   disableClusteringAtZoom: 16
 });
 
-var doneMarker = L.VectorMarkers.icon({
-    icon: 'tree',
+var doneMarker = L.AwesomeMarkers.icon({
+    icon: 'leaf',
     markerColor: 'green'
 });
-var plannedMarker = L.VectorMarkers.icon({
-    icon: 'dot-circle-o',
+var plannedMarker = L.AwesomeMarkers.icon({
+    icon: 'alert',
     markerColor: 'orange'
 });
 

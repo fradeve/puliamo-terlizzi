@@ -7,7 +7,8 @@
 
 {% block extra_js %}
     {% leaflet_js plugins="bouncemarker"%}
-    <script src={% static "js/Leaflet.vector-markers.min.js" %}></script>
+    <script src="{% static "js/leaflet.awesome-markers.min.js" %}"></script>
+    <link rel="stylesheet" href="{% static 'css/leaflet.awesome-markers.css' %}">
     <script type="text/javascript">
         if (typeof location.origin === 'undefined')
             location.origin = location.protocol + '//' + location.host;
@@ -23,12 +24,12 @@
                     layer.bindPopup(popupContent);
             }
 
-            var doneMarker = L.VectorMarkers.icon({
-                icon: 'tree',
+            var doneMarker = L.AwesomeMarkers.icon({
+                icon: 'leaf',
                 markerColor: 'green'
             });
-            var plannedMarker = L.VectorMarkers.icon({
-                icon: 'dot-circle-o',
+            var plannedMarker = L.AwesomeMarkers.icon({
+                icon: 'skull',
                 markerColor: 'orange'
             });
             var commonOpt = {
