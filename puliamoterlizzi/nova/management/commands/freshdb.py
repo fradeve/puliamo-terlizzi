@@ -8,16 +8,17 @@ from django.core.management import call_command
 def recreate_db():
     db = settings.DATABASES["default"]["NAME"]
     if not settings.DATABASES["default"]['HOST'] in ['', 'localhost', '127.0.0.1']:
+        # checks that PostGIS DB is not local
         print("*******************************************")
         print("* Cant recreate the db because its remote *")
         print("*******************************************")
         return
-
-    print("Dropping old db...")
-    if getattr(settings, "DATABASES")["default"]["ENGINE"] == "django.db.backends.sqlite3":
-        db_file = getattr(settings, "DATABASES")["default"]["NAME"]
-        print("Creating a new db...")
-        os.system("rm {0} ; touch {1}".format(db_file, db_file))
+    elif settings.DATABASES['default']['ENGINE'] == 'django.contrib.gis.db.backends.spatialite':
+        # checks if DB is SpatiaLite
+        print("Overwriting old db with new SpatiaLite db...")
+        os.system('spatialite ' + db + ' "SELECT InitSpatialMetaData();"')
+        call_command("syncdb", interactive=False)
+        return
     else:
         if os.system("sudo su - postgres --command 'dropdb {0}'".format(db)) != 0:
             print("Failed to drop the old database...")

@@ -28,10 +28,6 @@
                 icon: 'leaf',
                 markerColor: 'green'
             });
-            var plannedMarker = L.AwesomeMarkers.icon({
-                icon: 'skull',
-                markerColor: 'orange'
-            });
             var commonOpt = {
                 bounceOnAdd: true,
                 bounceOnAddOptions: {duration: 800, height: 100},
@@ -39,15 +35,14 @@
             };
 
             $.getJSON("{% url 'punti' %}", function(data) {
-                var points = L.geoJson(data, {
+                var done_points = $.grep(
+                    data.features,
+                    function (element) {return element.properties.status == 'SV';}
+                );
+                var points = L.geoJson(done_points, {
                     pointToLayer: function (feature, latlng) {
-                        if (feature.properties.status == 'PI') {
-                            var iconOpt = {icon: plannedMarker};
-                            return L.marker(latlng, $.extend({}, commonOpt, iconOpt));
-                        } else {
-                            var iconOpt = {icon: doneMarker};
-                            return L.marker(latlng, $.extend({}, commonOpt, iconOpt));
-                        }
+                        var iconOpt = {icon: doneMarker};
+                        return L.marker(latlng, $.extend({}, commonOpt, iconOpt));
                     },
                     onEachFeature: onEachFeature
                 });
@@ -71,7 +66,6 @@
 {% block extra_css %}
     {% leaflet_css %}
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href={% static "css/Leaflet.vector-markers.css" %}>
     <style>
         .legend, .temporal-legend {
             padding: 6px 10px;
