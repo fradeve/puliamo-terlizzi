@@ -62,3 +62,8 @@ class PercorsoIntervento(Invervento):
 
     line = models.MultiLineStringField(null=True, blank=True,
                                        verbose_name="Percorso intervento")
+
+class Fountain(models.Model):
+    geom = models.PointField(srid=4326, spatial_index=True, blank=True, null=True)
+
+    objects = models.GeoManager()

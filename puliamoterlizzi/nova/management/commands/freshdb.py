@@ -6,18 +6,20 @@ from django.core.management import call_command
 
 
 def recreate_db():
+    """
+    In the following order, tries to check if the DB is SpatiaLite (and recreate it),
+    or to check if the PostGIS DB is not local, or if it is local and can be recreated.
+    """
     db = settings.DATABASES["default"]["NAME"]
-    if not settings.DATABASES["default"]['HOST'] in ['', 'localhost', '127.0.0.1']:
-        # checks that PostGIS DB is not local
-        print("*******************************************")
-        print("* Cant recreate the db because its remote *")
-        print("*******************************************")
-        return
-    elif settings.DATABASES['default']['ENGINE'] == 'django.contrib.gis.db.backends.spatialite':
-        # checks if DB is SpatiaLite
+    if settings.DATABASES['default']['ENGINE'] == 'django.contrib.gis.db.backends.spatialite':
         print("Overwriting old db with new SpatiaLite db...")
         os.system('spatialite ' + db + ' "SELECT InitSpatialMetaData();"')
         call_command("syncdb", interactive=False)
+        return
+    elif not settings.DATABASES["default"]['HOST'] in ['', 'localhost', '127.0.0.1']:
+        print("*******************************************")
+        print("* Cant recreate the db because its remote *")
+        print("*******************************************")
         return
     else:
         if os.system("sudo su - postgres --command 'dropdb {0}'".format(db)) != 0:
